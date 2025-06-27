@@ -1,0 +1,19 @@
+---
+import MyLayout from '../layouts/itemsLayout.astro';
+import Burger from '../assets/burgermenu.png';
+---
+<MyLayout title="Paintings">
+    <header>
+        <div class="logo">
+            <h1><a href="index.html" class="logo-title active">My Portfolio</a></h1>
+        </div>
+        <nav>
+            <li><a href="about.html" class="menu-item">About me</a></li>
+            <li><a href="contact.html" class="menu-item">Contact me</a></li>
+			<img src={Burger.src} alt="" class="burger">
+		</nav>
+    </header>
+    <main>
+        <p>lovely</p>
+    </main>
+</MyLayout>

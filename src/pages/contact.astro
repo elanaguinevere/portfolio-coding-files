@@ -2,16 +2,7 @@
 import MyLayout from '../layouts/layout.astro';
 import Oval from '../assets/oval frame.png';
 ---
-<MyLayout title="Contact me">
-    <header>
-        <div class="logo">
-            <h1><a href="index.html" class="logo-title">My Portfolio</a></h1>
-        </div>
-        <nav>
-            <li><a href="about.html" class="menu-item">About me</a></li>
-            <li><a href="contact.html" class="menu-item active">Contact me</a></li>
-        </nav>
-    </header>
+<MyLayout title="Contact me" headerClass="contact-header">
     <main>
         <div class="contactForm">
             <img class="oval" src={Oval.src} alt="" height="500vh">

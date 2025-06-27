@@ -3,44 +3,57 @@ import Style from "../css/style.astro";
 import Behance from '../artworks/Behance.png';
 import Pinterest from '../artworks/Pinterest.png';
 import LinkedIn from '../artworks/LinkedIn.png';
+import Burger from '../assets/burgermenu.png'
+const {headerClass} = Astro.props
+
 ---
+
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <article>
-        <slot />
-    </article>
-    <Style></Style>
-    <footer class="footer">
-        <div class="socials">
-            <img src={LinkedIn.src} alt="">
-            <img src={Pinterest.src} alt="">
-            <img src={Behance.src} alt="">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html" class={`logo-title ${headerClass === 'default-header' ? 'active':''}`} >My Portfolio</a></h1>
         </div>
-        <div class="artStyles">
-            <li><a href="paintings.astro" class="styles" >Paintings</a></li>
-            <p class="styles line">|</p>
-            <li><a href="jewellery.astro" class="styles">Jewellery</a></li>
-            <p class="styles line">|</p>
-            <li><a href="websites.astro" class="styles">Devine Projects</a></li>
-            <p class="styles line">|</p>
-            <li><a href="websites.astro" class="styles">Digital Art</a></li>
-        </div>
-        <div class="navigation">
-            <li><a href="index.astro" class="nav-item">Home</a></li>
-            <p class="nav-item line">|</p>
-            <li><a href="about.html" class="nav-item">About me</a></li>
-            <p class="nav-item line">|</p>
-            <li><a href="contact.html" class="nav-item">Contact me</a></li>
-        </div>
+        <nav>
+            <li><a href="/about" class={`menu-item ${headerClass === 'about-header' ? 'active':''}`}>About me</a></li>
+            <li><a href="/contact" class={`menu-item ${headerClass === 'contact-header' ? 'active':''}`}>Contact me</a></li>
+            <img src={Burger.src} alt="" class="burger">
+        </nav>
+    </header>
+    <body>
+        <article>
+            <slot />
+        </article>
+        <Style></Style>
+        <footer class="footer">
+            <div class="socials">
+                <img src={LinkedIn.src} alt="">
+                <img src={Pinterest.src} alt="">
+                <img src={Behance.src} alt="">
+            </div>
+            <div class="artStyles">
+                <li><a href="/paintings" class="styles" >Paintings</a></li>
+                <p class="styles line">|</p>
+                <li><a href="/jewellery" class="styles">Jewellery</a></li>
+                <p class="styles line">|</p>
+                <li><a href="/devine-projects" class="styles">Devine Projects</a></li>
+                <p class="styles line">|</p>
+                <li><a href="/digital-art" class="styles">Digital Art</a></li>
+            </div>
+            <div class="navigation">
+                <li><a href="/" class="nav-item">Home</a></li>
+                <p class="nav-item line">|</p>
+                <li><a href="/about" class="nav-item">About me</a></li>
+                <p class="nav-item line">|</p>
+                <li><a href="/contact" class="nav-item">Contact me</a></li>
+            </div>
 
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

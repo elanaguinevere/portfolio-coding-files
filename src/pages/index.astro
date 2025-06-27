@@ -1,22 +1,11 @@
 ---
 import MyLayout from '../layouts/layout.astro';
-import Burger from '../assets/burgermenu.png';
 ---
-<MyLayout title="Home Page">
-	<header>
-        <div class="logo">
-            <h1><a href="index.html" class="logo-title active">My Portfolio</a></h1>
-        </div>
-        <nav>
-            <li><a href="about.html" class="menu-item">About me</a></li>
-            <li><a href="contact.html" class="menu-item">Contact me</a></li>
-			<img src={Burger.src} alt="" class="burger">
-		</nav>
-    </header>
+<MyLayout title="Home Page" headerClass="default-header">
 
 <main>
 		<div class="intro">
-			<h2 class="title">My Portfolio</h2>
+			<h1 class="title">My Portfolio</h1>
 			<a href="#intro-duction" class="arrow" id="arrow"><h3>&#8595</h3></a>
 		</div>
 		<div id="intro-duction" class="intro-duction">
@@ -32,13 +21,14 @@ import Burger from '../assets/burgermenu.png';
 		<div id="timelineContainer" class="timelineContainer">
 			<img src="/src/assets/timeline.png" alt=""  width="100%" class="fade-timeline" id="fadeTimeline">
 		</div>
-		<h2>Project Gallery</h2>
+		<h2 class="project-title">Project Gallery</h2>
 		<ul>
-			<li class="galleryLi"><a href="/src/pages/painting.astro">Paintings</a></li>
-			<li class="galleryLi"><a href="">Jewellery</a></li>
-			<li class="galleryLi"><a href="">Digital art</a></li>
-			<li class="galleryLi"><a href="">Devine Projects</a></li>
+			<li class="galleryLi">	<a href="/paintings">Paintings</a></li>
+			<li class="galleryLi"><a href="/jewellery">Jewellery</a></li>
+			<li class="galleryLi"><a href="/digital-art">Digital art</a></li>
+			<li class="galleryLi"><a href="/devine-projects">Devine Projects</a></li>
 		</ul>
+	
 		
 </main>
 

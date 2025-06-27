@@ -1,0 +1,46 @@
+---
+import Style from "../css/style.astro";
+import Behance from '../artworks/Behance.png';
+import Pinterest from '../artworks/Pinterest.png';
+import LinkedIn from '../artworks/LinkedIn.png';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <article>
+        <slot />
+    </article>
+    <Style></Style>
+    <footer class="footer">
+        <div class="socials">
+            <img src={LinkedIn.src} alt="">
+            <img src={Pinterest.src} alt="">
+            <img src={Behance.src} alt="">
+        </div>
+        <div class="artStyles">
+            <li><a href="paintings.astro" class="styles" >Paintings</a></li>
+            <p class="styles line">|</p>
+            <li><a href="jewellery.astro" class="styles">Jewellery</a></li>
+            <p class="styles line">|</p>
+            <li><a href="websites.astro" class="styles">Websites</a></li>
+            <p class="styles line">|</p>
+            <li><a href="websites.astro" class="styles">Digital Art</a></li>
+        </div>
+        <div class="navigation">
+            <li><a href="index.astro" class="nav-item">Home</a></li>
+            <p class="nav-item line">|</p>
+            <li><a href="about.html" class="nav-item">About me</a></li>
+            <p class="nav-item line">|</p>
+            <li><a href="contact.html" class="nav-item">Contact me</a></li>
+        </div>
+
+    </footer>
+</body>
+</html>

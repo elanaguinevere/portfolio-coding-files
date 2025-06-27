@@ -1,0 +1,256 @@
+<style is:global>
+html {
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: Sungold;
+    src:"url(SunGold.ttf)";
+}
+@font-face{
+    font-family: Oswald;
+    src:"url(Oswald-VariableFont_wght.ttf)";
+}
+:root{
+    --dark-green: #0E2621;
+    --light-green:#4A6043;
+    --beige:#C4B39A;
+    --light-brown:#865F40;
+    --dark-brown:#4C2A18;
+    --gold:#8C7040;
+    --highlight-gold:#E9C949;
+    --light-gold:#CDB968;
+
+    --h1: 128px;
+    --h2: 96px;
+    --h3: 48px ;
+    --h4:40px;
+    --p:36px;
+    --p2:32px;
+    --p3:24px;
+}
+body{
+    color: var(--light-gold);
+    background-color:var(--beige);
+    padding: 0rem;
+    margin: 0rem;
+    font-family: Sungold;
+    font-size: var(--p);
+}
+.logo-title{
+    display: flex;
+    justify-content: center; 
+    font-size: var(--h4);
+    color: var(--dark-green);
+    font-family: Sungold;
+    font-weight: 900;
+}
+header{
+    background-color: var(--light-green);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    max-height: 10vh;
+    width:100vw ;
+    /* position: fixed; */
+    z-index: +10;
+}
+.menu-item{
+    font-size: var(--p);
+    color: var(--dark-green);
+    margin: 1rem;
+}
+.menu-item:hover, .logo-title:hover{
+    color: var(--gold);
+    text-decoration: none;
+}
+nav{
+    display: list-item;
+    list-style: none;
+    display: flex;
+    justify-content:center;
+   
+}
+.logo{
+    margin:2rem;
+    display: flex;
+    align-items: center;
+}
+.intro{
+    color: var(--light-gold);
+    background-color: var(--dark-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 120vh;
+}
+.intro-duction{
+    display: flex;
+    margin-top: -4rem;
+    justify-content: space-evenly;
+}
+.aboutme{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: Oswald;
+}
+.introduction{
+    color:var(--dark-green);
+    max-width: 50vw;
+    font-style: normal;
+}
+.picture{
+    max-height:700px ;
+    margin-top: -5rem;
+}
+
+.introductionTitle{
+    min-width: 30vw;
+    color: var(--beige);
+    margin-top:-4rem ;
+}
+em{
+    font-weight: bold;
+    font-style: normal;
+}
+strong{
+    font-size: var(--h4);
+}
+.title{
+    text-decoration: underline;
+    font-size: var(--h1);
+    font-family: Sungold;
+    font-weight: 100;
+    margin: 0rem;
+}
+.active{
+    color: var(--beige);
+    text-decoration: none;
+}
+.passive{
+    color: var(--dark-green);
+    text-decoration: underline;
+}
+.arrow{
+    text-decoration: none;
+    color: var(--light-gold);
+    font-size: var(--h3);
+    padding: 3rem;
+    margin: -3rem;
+}
+.arrow:hover{
+    position: relative;
+    animation-name: arrow;
+  animation-duration: 2s;
+}
+@keyframes arrow{
+    0% {left:0px; top:0px;}
+    75% {left:0px; top:50px;}
+    100% {left:0px; top:0px;}
+}
+.squareFrame, .ovalFrame, .circleFrame, .rectangleFrame{
+    max-height: 80vh;
+    margin-top: 5vh;
+    z-index: +1;
+
+}
+.ovalFrame{
+    max-width: 50vw;
+    margin-top: 50vh;
+}
+.circleFrame{
+    margin-top: -40vh;
+}
+.rectangleFrame{
+    margin-bottom: 3rem;
+}
+.frames{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(/src/assets/Rectangle\ 10.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: 0vw 130vh;
+    
+}
+
+
+.footer, .artStyles{
+    color: var(--beige);
+    background-color: var(--light-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+.artStyles,.navigation,.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    margin-top:1rem;
+}
+.styles{
+    color: var(--beige);
+    text-decoration: underline;
+    margin: 2rem;
+    font-size: var(--p2);
+}
+.navigation{
+    background-color: var(--dark-green);
+    padding: 2rem;
+}
+.nav-item{
+    color: var(--gold);
+    text-decoration: underline;
+    margin: 2rem;
+    font-size: var(--p3);
+}
+.line{
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+.name{
+    color: var(--dark-green);
+    font-size: var(--h3);
+    margin-left: 5rem;
+}
+
+.active{
+    color: var(beige);
+    text-decoration: none;
+}
+.school{
+    background-color: var(--dark-green);
+    border-radius: 30mm 30mm 0 0;
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    padding: 4rem;
+}
+.subtitle{
+    color: dark;
+    font-size: var(--h3);
+}
+.oval{
+    margin: 5rem 0 5rem 0;
+}
+.contactForm{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form{
+    color: var(--dark-green);
+    font-size: var(--h4);
+}
+.burger{
+    margin: 0 1rem 0 1rem;
+}
+</style>

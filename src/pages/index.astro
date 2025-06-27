@@ -1,16 +1,35 @@
 ---
-
+import MyLayout from '../layouts/layout.astro';
+import Burger from '../assets/burgermenu.png';
 ---
+<MyLayout title="Home Page">
+	<header>
+        <div class="logo">
+            <h1><a href="index.html" class="logo-title active">My Portfolio</a></h1>
+        </div>
+        <nav>
+            <li><a href="about.html" class="menu-item">About me</a></li>
+            <li><a href="contact.html" class="menu-item">Contact me</a></li>
+			<img src={Burger.src} alt="" class="burger">
+		</nav>
+    </header>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<main>
+		<div class="intro">
+			<h2 class="title">My Portfolio</h2>
+			<a href="#intro-duction" class="arrow" id="arrow"><h3>&#8595</h3></a>
+		</div>
+		<div id="intro-duction" class="intro-duction">
+			<img class="picture" src="/src/assets/introductionpicture.png" alt="">
+			<div class="aboutme">
+				<h2 class="introductionTitle">Hello, I'm Elana Guinevere</h2>
+				<p class="introduction">I’m a student at Howest in Kortrijk, Belgium,<br> studying <em>Digital Design and Development (Devine)</em>. 
+					To expand my skills, I’ve been taking online courses alongside my studies. 
+					Currently, I’m exploring various media to create artworks—I design my own jewellery and have recently started working with oil paint. 
+					<strong>This portfolio showcases my proudest creations.</strong></p>
+			</div>
+		</div>
+		
+</main>
+
+</MyLayout>

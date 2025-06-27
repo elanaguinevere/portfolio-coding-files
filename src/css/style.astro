@@ -27,6 +27,8 @@ html {
     --p:36px;
     --p2:32px;
     --p3:24px;
+    --p4:16px;
+    --p5:11px;
 }
 body{
     color: var(--light-gold);
@@ -36,6 +38,7 @@ body{
     font-family: Sungold;
     font-size: var(--p);
 }
+
 .logo-title{
     display: flex;
     justify-content: center; 
@@ -68,12 +71,21 @@ nav{
     list-style: none;
     display: flex;
     justify-content:center;
+    align-items: center;
    
 }
 .logo{
     margin:2rem;
     display: flex;
     align-items: center;
+}
+
+main{
+    background-image: url(../assets/backgroundGradient.png);
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-position-y: 1850px;
+    background-size: cover;
 }
 .intro{
     color: var(--light-gold);
@@ -82,7 +94,7 @@ nav{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 120vh;
+    min-height: 100vh;
 }
 .intro-duction{
     display: flex;
@@ -104,7 +116,6 @@ nav{
     max-height:700px ;
     margin-top: -5rem;
 }
-
 .introductionTitle{
     min-width: 30vw;
     color: var(--beige);
@@ -176,7 +187,22 @@ strong{
     background-position: 0vw 130vh;
     
 }
-
+ 
+.timelineContainer{
+ width: auto;
+ height: 400px;
+ overflow: hidden;
+}
+.fade-timeline {
+    opacity: .5;
+    transition: opacity 0.5s ease;
+    object-fit: cover;
+    position: absolute;
+    transition: opacity .5s ease;
+}
+.timelineContainer:hover .fade-timeline{
+    opacity: 1;
+}
 
 .footer, .artStyles{
     color: var(--beige);
@@ -186,7 +212,6 @@ strong{
     justify-content: center;
     list-style: none;
 }
-
 .artStyles,.navigation,.socials{
     display: flex;
     flex-direction: row;
@@ -252,5 +277,163 @@ strong{
 }
 .burger{
     margin: 0 1rem 0 1rem;
+}
+
+
+@media screen and (max-width: 1100px){
+body{
+    font-size: var(--p3);
+}
+.logo-title{
+    font-size: var(--p);
+}
+.menu-item{
+    font-size: var(--p2);
+}
+.logo{
+    margin:1.5rem;
+}
+
+main{
+    background-image: url(../assets/backgroundGradient.png);
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-position-y: 1300px;
+    background-size:contain;
+}
+.intro-duction{
+    margin-top: -3rem;
+}
+.aboutme{
+    margin: 1.5rem;
+}
+.picture{
+    max-height:500px ;
+}
+
+strong{
+    font-size: var(--p2);
+}
+.title{
+    font-size: var(--h2);
+}
+.styles{
+    margin: 1.5rem;
+    font-size: var(--p3);
+}
+.navigation{
+    padding: 1.5rem;
+}
+.nav-item{
+    color: var(--gold);
+    text-decoration: underline;
+    margin: 2rem;
+    font-size: var(--p3);
+}
+.line{
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+.burger{
+    margin: .5rem .5rem .5rem .5rem;
+}
+}
+@media screen and (max-width: 800px){
+main{
+    background-position-y: 1430px;
+}
+.intro-duction{
+    margin-top: -4rem;
+}
+}
+@media screen and (max-width: 700px){
+body{
+    font-size: var(--p4);
+}
+.logo-title{
+    font-size: var(--p1);
+}
+.menu-item{
+    font-size: var(--p3);
+}
+
+main{
+    background-image: url(../assets/backgroundGradient.png);
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-position-y: 1240px;
+    background-size:contain;
+}
+.intro-duction{
+    margin-top: -3rem;
+}
+.aboutme{
+    margin: 1.5rem;
+}
+strong{
+    font-size: var(--p3);
+}
+.title{
+    font-size: var(--h3);
+}
+.styles{
+    margin: 1.5rem;
+    font-size: var(--p4);
+}
+.nav-item{
+    color: var(--gold);
+    text-decoration: underline;
+    margin: 2rem;
+    font-size: var(--p4);
+}
+}
+@media screen and (max-width: 500px){
+body{
+    font-size: var(--p5);
+}
+.logo-title{
+    font-size: var(--p3);
+    margin-right: -2rem;
+}
+.menu-item{
+    font-size: var(--p4);
+}
+
+main{
+    background-image: url(../assets/backgroundGradient.png);
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-position-y: 1035px;
+    background-size:contain;
+}
+
+.picture{
+    max-height: 300px;
+}
+.intro-duction{
+    margin-top:1rem;
+}
+.aboutme{
+    margin: 1.5rem;
+}
+strong{
+    font-size: var(--p4);
+}
+.title{
+    font-size: var(--h4);
+}
+.styles{
+    margin: 1.5rem;
+    font-size: var(--p5);
+}
+.nav-item{
+    color: var(--gold);
+    text-decoration: underline;
+    margin: 2rem;
+    font-size: var(--p4);
+}
 }
 </style>

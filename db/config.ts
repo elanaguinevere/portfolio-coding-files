@@ -7,17 +7,17 @@ export const artworks = [
     hoursWorked: 15,
     style: 'Oil painting',
     material: 'Oil on canvas',
-    explanation: 'A moody piece inspired '<br> 'by rainy spring days.'
+    explanation: 'A moody piece inspired by rainy spring days.'
   },
   {
     id: 'anniversary',
     title: 'Anniversary',
-    image: '/artworks/anniversary.png',
+    image: '/src/artworks/anniversary.png',
     date: '2024-11-05',
     hoursWorked: 20,
-    style: 'Acrylic',
-    material: 'Acrylic on wood panel',
-    explanation: 'A celebration of love and memory.'
+    style: 'acrylic',
+    material: 'Acrylic on canvas',
+    explanation: 'For the 50th anniversary of my grandparents’ marriage I decided to paint them something connected to gold roses. It was the first time I painted hands and used a photo reference.'
   }
 ];
 export function getStaticPaths() {

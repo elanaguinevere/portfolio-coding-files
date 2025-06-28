@@ -21,7 +21,6 @@ const {headerClass} = Astro.props
             <h1><a href="index.html" class={`logo-title ${headerClass === 'default-header' ? 'active':''}`} >My Portfolio</a></h1>
         </div>
         <nav>
-            <li><a href="/about" class={`menu-item ${headerClass === 'about-header' ? 'active':''}`}>About me</a></li>
             <li><a href="/contact" class={`menu-item ${headerClass === 'contact-header' ? 'active':''}`}>Contact me</a></li>
             <img src={Burger.src} alt="" class="burger">
         </nav>
@@ -48,8 +47,6 @@ const {headerClass} = Astro.props
             </div>
             <div class="navigation">
                 <li><a href="/" class="nav-item">Home</a></li>
-                <p class="nav-item line">|</p>
-                <li><a href="/about" class="nav-item">About me</a></li>
                 <p class="nav-item line">|</p>
                 <li><a href="/contact" class="nav-item">Contact me</a></li>
             </div>

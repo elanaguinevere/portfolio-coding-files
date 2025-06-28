@@ -6,6 +6,7 @@ import MyLayout from '../layouts/layout.astro';
 <main>
 		<div class="intro">
 			<h1 class="title">My Portfolio</h1>
+			<p class="titleName">By Elana Guinevere</p>
 			<a href="#intro-duction" class="arrow" id="arrow"><h3>&#8595</h3></a>
 		</div>
 		<div id="intro-duction" class="intro-duction">
@@ -21,13 +22,15 @@ import MyLayout from '../layouts/layout.astro';
 		<div id="timelineContainer" class="timelineContainer">
 			<img src="/src/assets/timeline.png" alt=""  width="100%" class="fade-timeline" id="fadeTimeline">
 		</div>
-		<h2 class="project-title">Project Gallery</h2>
-		<ul>
-			<li class="galleryLi">	<a href="/paintings">Paintings</a></li>
-			<li class="galleryLi"><a href="/jewellery">Jewellery</a></li>
-			<li class="galleryLi"><a href="/digital-art">Digital art</a></li>
-			<li class="galleryLi"><a href="/devine-projects">Devine Projects</a></li>
-		</ul>
+		<div class="gallery">
+			<h2 class="project-title sungold">Project Gallery</h2>
+			<ul>
+				<li class="galleryLi"><a class="galleryA" href="/paintings">Paintings</a></li>
+				<li class="galleryLi"><a class="galleryA" href="/jewellery">Jewellery</a></li>
+				<li class="galleryLi"><a class="galleryA" href="/digital-art">Digital art</a></li>
+				<li class="galleryLi"><a class="galleryA" href="/devine-projects">Devine Projects</a></li>
+			</ul>
+		</div>
 	
 		
 </main>

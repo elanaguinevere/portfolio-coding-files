@@ -1,0 +1,28 @@
+---
+import MyLayout from "../layouts/itemsLayout.astro";
+import { artworks } from '../../db/config';
+
+const artwork = artworks.find(a => a.id === 1)
+---
+
+<MyLayout>
+    <main>
+        <p>arrow</p>
+        <body>
+            <section class="art-gallery">
+                <article class="art-card">
+                    <img src={artwork.image} alt={artwork.title} />
+                    <h2>{artwork.title}</h2>
+                    <ul>
+                        <li><strong>Date:</strong> {artwork.date}</li>
+                        <li><strong>Hours:</strong> {artwork.hoursWorked} hours</li>
+                        <li><strong>Style:</strong> {artwork.style}</li>
+                        <li><strong>Material:</strong> {artwork.material}</li>
+                    </ul>
+                    <p>{artwork.explanation}</p>
+                </article>
+            </section>
+        </body>
+    </main>
+
+</MyLayout>

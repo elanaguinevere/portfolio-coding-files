@@ -1,5 +1,5 @@
 ---
-import "../css/style.astro";
+import Style from "../css/style.astro";
 import Behance from '../artworks/Behance.png';
 import Pinterest from '../artworks/Pinterest.png';
 import LinkedIn from '../artworks/LinkedIn.png';
@@ -29,6 +29,7 @@ const {headerClass} = Astro.props
         <article>
             <slot />
         </article>
+        <Style></Style>
         <footer class="footer">
             <div class="socials">
                 <img src={LinkedIn.src} alt="">

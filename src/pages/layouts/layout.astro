@@ -1,5 +1,5 @@
 ---
-import "../styles/global.astro";
+import "../styles/global.css";
 const { headerClass } = Astro.props;
 ---
 
@@ -20,7 +20,7 @@ const { headerClass } = Astro.props;
         <li>
           <a href="/contact" class={`menu-item ${headerClass === 'contact-header' ? 'active' : ''}`}>Contact me</a>
         </li>
-        <img src="../../public/assets/burgermenu.png" alt="" class="burger" />
+        <img src="/assets/burgermenu.png" alt="" class="burger" />
       </nav>
     </header>
 
@@ -30,9 +30,9 @@ const { headerClass } = Astro.props;
 
     <footer class="footer">
       <div class="socials">
-        <img src="../../public/artworks/LinkedIn.png" alt="LinkedIn" />
-        <img src="../../public/artworks/Pinterest.png" alt="Pinterest" />
-        <img src="../../public/artworks/Behance.png" alt="Behance" />
+        <img src="/artworks/LinkedIn.png" alt="LinkedIn" />
+        <img src="/artworks/Pinterest.png" alt="Pinterest" />
+        <img src="/artworks/Behance.png" alt="Behance" />
       </div>
       <div class="artStyles">
         <li><a href="/paintings" class="styles">Paintings</a></li>

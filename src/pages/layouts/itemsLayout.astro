@@ -1,7 +1,6 @@
 ---
 import "../styles/global.css";
-// example in Astro component or page
-const base = Astro.base; // automatically `/my-portfolio/`
+
 import Behance from '../../assets/Behance.png';
 import Pinterest from '../../assets/Pinterest.png';
 import LinkedIn from '../../assets/LinkedIn.png';
@@ -10,35 +9,42 @@ import LinkedIn from '../../assets/LinkedIn.png';
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-    <article>
-        <slot />
-    </article>
-    <footer class="footer">
-        <div class="socials">
-            <img src={LinkedIn.src} alt="">
-            <img src={Pinterest.src} alt="">
-            <img src={Behance.src} alt="">
-        </div>
-        <div class="artStyles">
-            <li><a href="/paintings" class="styles" >Paintings</a></li>
-            <p class="styles line">|</p>
-            <li><a href="/jewellery" class="styles">Jewellery</a></li>
-            <p class="styles line">|</p>
-            <li><a href="/devine-projects" class="styles">Devine Projects</a></li>
-            <p class="styles line">|</p>
-            <li><a href="/digital-art" class="styles">Digital Art</a></li>
-        </div>
-        <div class="navigation">
-            <li><a href="/" class="nav-item">Home</a></li>
-            <p class="nav-item line">|</p>
-            <li><a href="/about" class="nav-item">About me</a></li>
-            <p class="nav-item line">|</p>
-            <li><a href="/contact" class="nav-item">Contact me</a></li>
-        </div>
+  <article>
+    <slot />
+  </article>
 
-    </footer>
+  <footer class="footer">
+    <div class="socials">
+      <img src={LinkedIn.src} alt="LinkedIn" />
+      <img src={Pinterest.src} alt="Pinterest" />
+      <img src={Behance.src} alt="Behance" />
+    </div>
+
+    <div class="artStyles">
+      <ul>
+        <li><a href="/paintings" class="styles">Paintings</a></li>
+        <li><span class="styles line">|</span></li>
+        <li><a href="/jewellery" class="styles">Jewellery</a></li>
+        <li><span class="styles line">|</span></li>
+        <li><a href="/devine-projects" class="styles">Devine Projects</a></li>
+        <li><span class="styles line">|</span></li>
+        <li><a href="/digital-art" class="styles">Digital Art</a></li>
+      </ul>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li><a href="/" class="nav-item">Home</a></li>
+        <li><span class="nav-item line">|</span></li>
+        <li><a href="/about" class="nav-item">About me</a></li>
+        <li><span class="nav-item line">|</span></li>
+        <li><a href="/contact" class="nav-item">Contact me</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
+</html>

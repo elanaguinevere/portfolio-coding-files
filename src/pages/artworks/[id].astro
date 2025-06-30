@@ -9,7 +9,8 @@ export async function getStaticPaths() {
   };
 }
 
-const base = Astro.base;
+export const prerender = true;
+
 const { id } = Astro.params;
 const artwork = artworks.find((art) => art.id === id);
 
@@ -21,8 +22,8 @@ if (!artwork) {
 <MyLayout2 title={artwork.title}>
   <main class="art-detail">
     <div class="left">
-      <a href={`${base}paintings`} class="back-arrow">←</a>
-      <img class="artwork" src={`${base}${artwork.image}`} alt={artwork.title} />
+      <a href="/paintings" class="back-arrow">←</a>
+      <img class="artwork" src={artwork.image} alt={artwork.title} />
     </div>
     <div class="right">
       <h2 class="title">{artwork.title}</h2>

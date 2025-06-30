@@ -10,7 +10,7 @@ export default defineConfig({
     session: true,
   },
   site: 'https://elanaguinevere.github.io',
-  base: '/my-portfolio',
+  base: '/my-portfolio/',
   adapter: netlify({ cacheOnDemandPages: true }),
   // Add other configs here, do NOT add another export default
 });

@@ -2,11 +2,11 @@
 import MyLayout2 from '../layouts/layout.astro';
 import { artworks } from '../../../db/config';
 
-export async function getStaticPaths() {
-  return {
-    paths: artworks.map((art) => ({ params: { id: art.id } })),
-    fallback: false,
-  };
+export function getStaticPaths() {
+  return artworks.map((art) => ({
+    params: { id: art.id }
+  }));
+  
 }
 
 export const prerender = true;
@@ -22,7 +22,7 @@ if (!artwork) {
 <MyLayout2 title={artwork.title}>
   <main class="art-detail">
     <div class="left">
-      <a href="/paintings" class="back-arrow">←</a>
+      <a href="/my-portfolio/paintings" class="back-arrow">←</a>
       <img class="artwork" src={artwork.image} alt={artwork.title} />
     </div>
     <div class="right">

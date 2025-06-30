@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 const { headerClass } = Astro.props;
+const base = Astro.base;
 ---
 
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ const { headerClass } = Astro.props;
         <li>
           <a href="/contact" class={`menu-item ${headerClass === 'contact-header' ? 'active' : ''}`}>Contact me</a>
         </li>
-        <img src="/assets/burgermenu.png" alt="" class="burger" />
+        <img src={`${base}assets/burgermenu.png`} alt="" class="burger" />
       </nav>
     </header>
 

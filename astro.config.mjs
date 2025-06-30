@@ -15,3 +15,8 @@ export default defineConfig({
   adapter: netlify({cacheOnDemandPages: true,}),
 
 });
+
+export default {
+  base: '/my-portfolio/',
+  // other configs...
+};

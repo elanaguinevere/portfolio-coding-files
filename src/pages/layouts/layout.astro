@@ -1,5 +1,5 @@
 ---
-import "./styles/global.css";
+import "./styles/global.astro";
 const { headerClass } = Astro.props;
 ---
 
@@ -8,7 +8,7 @@ const { headerClass } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/global.css" /> <!-- updated to root-relative path -->
+    <link rel="stylesheet" href="/styles/global.astro" /> <!-- updated to root-relative path -->
   </head>
   <body>
     <header>

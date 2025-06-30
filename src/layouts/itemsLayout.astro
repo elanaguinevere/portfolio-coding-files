@@ -1,5 +1,5 @@
 ---
-import Style from "../css/style.astro";
+import "../css/style.css";
 import Behance from '../artworks/Behance.png';
 import Pinterest from '../artworks/Pinterest.png';
 import LinkedIn from '../artworks/LinkedIn.png';
@@ -16,7 +16,6 @@ import LinkedIn from '../artworks/LinkedIn.png';
     <article>
         <slot />
     </article>
-    <Style />
     <footer class="footer">
         <div class="socials">
             <img src={LinkedIn.src} alt="">

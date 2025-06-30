@@ -1,6 +1,6 @@
 ---
 import MyLayout from "../layouts/itemsLayout.astro";
-import { artworks } from '../../db/config';
+import { artworks } from '../../db/config.ts';
 
 const artwork = artworks.find(a => a.id === 1)
 ---

@@ -2,7 +2,7 @@ export const artworks = [
   {
     id: 'willow',
     title: 'Willow',
-    image: '/src/artworks/willow.png',
+    image: '../../public/artworks/willow.png',
     date: '2025-04-01',
     hoursWorked: 15,
     style: 'Oil painting',
@@ -12,7 +12,7 @@ export const artworks = [
   {
     id: 'anniversary',
     title: 'Anniversary',
-    image: '/src/artworks/anniversary.png',
+    image: '../../public/artworks/anniversary.png',
     date: '2024-11-05',
     hoursWorked: 20,
     style: 'acrylic',

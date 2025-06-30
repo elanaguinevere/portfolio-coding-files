@@ -1,7 +1,7 @@
 ---
 import MyLayout2 from '../layouts/layout.astro';
 import { artworks, getStaticPaths } from '../../../db/config';
-
+export const prerender = true;
 export { getStaticPaths };
 
 const { id } = Astro.params;

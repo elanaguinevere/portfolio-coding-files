@@ -7,8 +7,13 @@ import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [db()],
+  integrations: [db(), netlify()],
+  output: 'server',
+  experimental: {
+    session:true
+  },
   site: 'https://elanaguinevere.github.io',
   base: '/my-portfolio',
-  adapter: netlify(),
+  adapter: netlify({cacheOnDemandPages: true,}),
+
 });

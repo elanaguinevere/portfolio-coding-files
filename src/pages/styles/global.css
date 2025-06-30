@@ -413,11 +413,7 @@ body{
 }
 
 main{
-    background-image: url(../assets/backgroundGradient.png);
-    background-position: absolute;
-    background-repeat: no-repeat;
     background-position-y: 1400px;
-    background-size:contain;
 }
 .intro-duction{
     margin-top: -3rem;
@@ -480,11 +476,8 @@ body{
 }
 
 main{
-    background-image: url(../assets/backgroundGradient.png);
-    background-position: absolute;
-    background-repeat: no-repeat;
     background-position-y: 1340px;
-    background-size:contain;
+
 }
 .intro-duction{
     margin-top: -3rem;
@@ -523,11 +516,7 @@ body{
 }
 
 main{
-    background-image: url(../assets/backgroundGradient.png);
-    background-position: absolute;
-    background-repeat: no-repeat;
     background-position-y: 1135px;
-    background-size:contain;
 }
 
 .picture{

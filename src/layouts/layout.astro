@@ -1,56 +1,56 @@
 ---
 import Style from "../css/style.astro";
-import Behance from '../artworks/Behance.png';
-import Pinterest from '../artworks/Pinterest.png';
-import LinkedIn from '../artworks/LinkedIn.png';
-import Burger from '../assets/burgermenu.png'
-const {headerClass} = Astro.props
-
+const { headerClass } = Astro.props;
 ---
-
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" /> <!-- updated to root-relative path -->
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <h1><a href="index.html" class={`logo-title ${headerClass === 'default-header' ? 'active':''}`} >My Portfolio</a></h1>
-        </div>
-        <nav>
-            <li><a href="/contact" class={`menu-item ${headerClass === 'contact-header' ? 'active':''}`}>Contact me</a></li>
-            <img src={Burger.src} alt="" class="burger">
-        </nav>
+      <div class="logo">
+        <h1>
+          <a href="/" class={`logo-title ${headerClass === 'default-header' ? 'active' : ''}`}>My Portfolio</a>
+        </h1>
+      </div>
+      <nav>
+        <li>
+          <a href="/contact" class={`menu-item ${headerClass === 'contact-header' ? 'active' : ''}`}>Contact me</a>
+        </li>
+        <img src="/assets/burgermenu.png" alt="" class="burger" />
+      </nav>
     </header>
-    <body>
-        <article>
-            <slot />
-        </article>
-        <Style></Style>
-        <footer class="footer">
-            <div class="socials">
-                <img src={LinkedIn.src} alt="">
-                <img src={Pinterest.src} alt="">
-                <img src={Behance.src} alt="">
-            </div>
-            <div class="artStyles">
-                <li><a href="/paintings" class="styles" >Paintings</a></li>
-                <p class="styles line">|</p>
-                <li><a href="/jewellery" class="styles">Jewellery</a></li>
-                <p class="styles line">|</p>
-                <li><a href="/devine-projects" class="styles">Devine Projects</a></li>
-                <p class="styles line">|</p>
-                <li><a href="/digital-art" class="styles">Digital Art</a></li>
-            </div>
-            <div class="navigation">
-                <li><a href="/" class="nav-item">Home</a></li>
-                <p class="nav-item line">|</p>
-                <li><a href="/contact" class="nav-item">Contact me</a></li>
-            </div>
 
-        </footer>
-    </body>
+    <article>
+      <slot />
+    </article>
+
+    <Style />
+
+    <footer class="footer">
+      <div class="socials">
+        <img src="/artworks/LinkedIn.png" alt="LinkedIn" />
+        <img src="/artworks/Pinterest.png" alt="Pinterest" />
+        <img src="/artworks/Behance.png" alt="Behance" />
+      </div>
+      <div class="artStyles">
+        <li><a href="/paintings" class="styles">Paintings</a></li>
+        <p class="styles line">|</p>
+        <li><a href="/jewellery" class="styles">Jewellery</a></li>
+        <p class="styles line">|</p>
+        <li><a href="/devine-projects" class="styles">Devine Projects</a></li>
+        <p class="styles line">|</p>
+        <li><a href="/digital-art" class="styles">Digital Art</a></li>
+      </div>
+      <div class="navigation">
+        <li><a href="/" class="nav-item">Home</a></li>
+        <p class="nav-item line">|</p>
+        <li><a href="/contact" class="nav-item">Contact me</a></li>
+      </div>
+    </footer>
+  </body>
 </html>

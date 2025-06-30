@@ -1,8 +1,5 @@
 ---
 import MyLayout2 from '../layouts/layout.astro';
-import Anniversary from '../artworks/anniversary.png';
-import Willow from '../artworks/willow.png';
-
 ---
 <MyLayout2 title="Paintings">
     <main>
@@ -11,11 +8,11 @@ import Willow from '../artworks/willow.png';
           </a>
         <div class="paintings">
             <a href="/my-portfolio/artworks/willow">
-                <img src={Willow.src} alt="Willow" class="willow painting">
+                <img src="/artworks/willow.png" class="willow painting">
             </a>
             
             <a href="/my-portfolio/artworks/anniversary">
-                <img src={Anniversary.src} alt="Anniversary" class="anniversary painting">
+                <img src="/artworks/anniversary.png" alt="Anniversary" class="anniversary painting">
             </a>
         </div>
    

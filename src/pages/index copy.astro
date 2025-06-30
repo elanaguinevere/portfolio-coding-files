@@ -1,11 +1,7 @@
 ---
 import MyLayout from '../layouts/layout.astro';
-import Square from '../artworks/square.png';
-import Rectangle from '../artworks/rectangle.png';
-import Oval from '../assets/oval frame.png';
-import Circle from '../assets/circular frame.png';
-import Burger from '../assets/burgermenu.png';
 ---
+
 <MyLayout title="Home Page">
 	<header>
         <div class="logo">
@@ -14,7 +10,7 @@ import Burger from '../assets/burgermenu.png';
         <nav>
             <li><a href="about.html" class="menu-item">About me</a></li>
             <li><a href="contact.html" class="menu-item">Contact me</a></li>
-			<img src={Burger.src} alt="" class="burger">
+			<img src="/assets/burgermenu.png" alt="" class="burger">
 		</nav>
     </header>
 
@@ -24,11 +20,9 @@ import Burger from '../assets/burgermenu.png';
 			<a href="#squareFrame" class="arrow" id="arrow"><h3>&#8595</h3></a>
 		</div>
 		<div class="frames offset">
-			<img src={Square.src} alt="" id="squareFrame" class="squareFrame artwork" >
-			<img src={Oval.src} alt="" class="ovalFrame">
-			<img src={Circle.src} alt="" class="circleFrame">
-			<img src={Rectangle.src} alt="" class="rectangleFrame">
+			<img src="/artworks/square.png" alt="" id="squareFrame" class="squareFrame artwork" >
+			<img src="/assets/oval%20frame.png" alt="" class="ovalFrame">
+			<img src="/assets/circular%20frame.png" alt="" class="circleFrame">
+			<img src="/artworks/rectangle.png" alt="" class="rectangleFrame">
 		</div>
 </main>
-
-</MyLayout>

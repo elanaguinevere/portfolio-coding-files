@@ -18,7 +18,7 @@ export const artworks = [
     style: 'acrylic',
     material: 'Acrylic on canvas',
     explanation: 'For the 50th anniversary of my grandparents’ marriage I decided to paint them something connected to gold roses. It was the first time I painted hands and used a photo reference.'
-  }
+  },
   {
     id: 'dagger',
     title: 'Hand With Dagger',

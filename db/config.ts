@@ -27,7 +27,7 @@ export const artworks = [
     hoursWorked: 24,
     style: 'oil',
     material: 'oil on canvas',
-    explanation: 'It was my first time [ainting ith oil paint and '
+    explanation: 'It was my first time painting with oil paint and trying to paint a hand and arm that looked kind of realistic. I loved painting this at the atelier of Lut, my mentor.'
   }
 ];
 export function getStaticPaths() {

@@ -4,7 +4,7 @@ html {
 }
 @font-face {
     font-family: Sungold;
-    src:url('/assets/Sungold/Sungold.ttf') format('truetype');
+    src:url('/assets/Sungold/SunGold.ttf') format('truetype');
 }
 @font-face{
     font-family: Oswald;
@@ -40,8 +40,6 @@ body{
     font-family: Sungold;
     font-size: var(--p);
 }
-
-
 .menu-item.active, .logo-title.active{
     color: var(--beige);
 }
@@ -85,7 +83,6 @@ nav{
     display: flex;
     align-items: center;
 }
-
 main{
     background-image: url('/src/assets/backgroundGradient.png');
     background-position: absolute;
@@ -111,6 +108,7 @@ main{
     display: flex;
     justify-content: space-evenly;
 }
+
 .aboutme{
     margin: 2rem;
     display: flex;
@@ -126,6 +124,8 @@ main{
     max-height:700px ;
     margin-top: -5rem;
 }
+
+
 .introductionTitle{
     min-width: 30vw;
     color: var(--beige);
@@ -279,15 +279,6 @@ ul{
     text-decoration: none;
 }
 
-
-.certificate{
-    color: var(--dark-green);
-
-}
-.certificates li::before{
-    content:"\2022  ";
-    color: var(--gold);
-}
 footer{
     margin-top: -2.5rem;
 }
@@ -339,14 +330,6 @@ footer{
 .active{
     color: var(beige);
     text-decoration: none;
-}
-.school{
-    background-color: var(--dark-green);
-    border-radius: 30mm 30mm 0 0;
-    display: flex;
-    justify-content:space-around ;
-    align-items: center;
-    padding: 4rem;
 }
 .subtitle{
     color: dark;
